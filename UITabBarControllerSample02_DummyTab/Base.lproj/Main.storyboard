@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ynf-pR-L9N">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dummy Downloads View Controller-->
+        <scene sceneID="Uma-E4-Hzb">
+            <objects>
+                <viewController id="HC6-PM-Rte" customClass="DummyDownloadsViewController" customModule="UITabBarControllerSample02_DummyTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MYf-at-hNI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DummyDownloadsViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xde-U3-dUt">
+                                <rect key="frame" x="79.5" y="437.5" width="255.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xde-U3-dUt" firstAttribute="centerX" secondItem="MYf-at-hNI" secondAttribute="centerX" id="ASG-tW-7EO"/>
+                            <constraint firstItem="Xde-U3-dUt" firstAttribute="centerY" secondItem="MYf-at-hNI" secondAttribute="centerY" id="ScB-wN-VLE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WJt-Qx-gYR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="IcS-uK-Upn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aj6-9X-Urq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-136" y="-303"/>
+        </scene>
+        <!--Downloads View Controller-->
+        <scene sceneID="0JF-No-GAY">
+            <objects>
+                <viewController storyboardIdentifier="downloads" id="bLX-6G-FfS" customClass="DownloadsViewController" customModule="UITabBarControllerSample02_DummyTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SeE-xr-nOG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DownloadsViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDZ-bV-jbN">
+                                <rect key="frame" x="109" y="437.5" width="196.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4r-k9-t54">
+                                <rect key="frame" x="184" y="522.5" width="46" height="30"/>
+                                <state key="normal" title="閉じる"/>
+                                <connections>
+                                    <action selector="tapCloseBtn" destination="bLX-6G-FfS" eventType="touchUpInside" id="u8k-gZ-g5J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a4r-k9-t54" firstAttribute="top" secondItem="aDZ-bV-jbN" secondAttribute="bottom" constant="64" id="3EY-xi-F6u"/>
+                            <constraint firstItem="aDZ-bV-jbN" firstAttribute="centerX" secondItem="SeE-xr-nOG" secondAttribute="centerX" id="4h9-6Q-8bj"/>
+                            <constraint firstItem="a4r-k9-t54" firstAttribute="centerX" secondItem="SeE-xr-nOG" secondAttribute="centerX" id="Jgf-2a-Rwu"/>
+                            <constraint firstItem="aDZ-bV-jbN" firstAttribute="centerY" secondItem="SeE-xr-nOG" secondAttribute="centerY" id="arK-yu-tfg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3mN-Dh-x1N"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeBtn" destination="a4r-k9-t54" id="E3S-ko-Ihe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vo0-vg-HVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="-308"/>
+        </scene>
+        <!--Dummy Contacts View Controller-->
+        <scene sceneID="6Ru-tV-bpD">
+            <objects>
+                <viewController id="L6k-Rw-Unv" customClass="DummyContactsViewController" customModule="UITabBarControllerSample02_DummyTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OCF-Fw-kM4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DummyContactsViewComtroller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aG-3v-x4s">
+                                <rect key="frame" x="85" y="437.5" width="244.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9aG-3v-x4s" firstAttribute="centerY" secondItem="OCF-Fw-kM4" secondAttribute="centerY" id="KJU-y9-YIM"/>
+                            <constraint firstItem="9aG-3v-x4s" firstAttribute="centerX" secondItem="OCF-Fw-kM4" secondAttribute="centerX" id="M2f-YJ-Orf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NCq-4C-Kbk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="K7K-kM-JnU" customClass="Con"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWC-7H-FgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-136" y="422"/>
+        </scene>
+        <!--Recents View Controller-->
+        <scene sceneID="Koi-fO-Wrt">
+            <objects>
+                <viewController id="Ky1-f7-Oyo" customClass="RecentsViewController" customModule="UITabBarControllerSample02_DummyTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5a4-i2-3B4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RecentsViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaT-3a-W46">
+                                <rect key="frame" x="120" y="437.5" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oaT-3a-W46" firstAttribute="centerY" secondItem="5a4-i2-3B4" secondAttribute="centerY" id="VC1-H8-Okj"/>
+                            <constraint firstItem="oaT-3a-W46" firstAttribute="centerX" secondItem="5a4-i2-3B4" secondAttribute="centerX" id="pkK-D5-lrY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tua-Ds-D7r"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="m0t-Af-hjA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJW-8u-6JD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-136" y="-959"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="yzS-Sh-keE">
+            <objects>
+                <tabBarController id="ynf-pR-L9N" customClass="MainTabBarController" customModule="UITabBarControllerSample02_DummyTab" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7zc-1a-oeQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ky1-f7-Oyo" kind="relationship" relationship="viewControllers" id="KTn-eC-2MP"/>
+                        <segue destination="HC6-PM-Rte" kind="relationship" relationship="viewControllers" id="QGu-ff-2l8"/>
+                        <segue destination="L6k-Rw-Unv" kind="relationship" relationship="viewControllers" id="0zY-dZ-fzB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nk7-aq-WhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1055" y="-303"/>
+        </scene>
+    </scenes>
+</document>
