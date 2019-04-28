@@ -17,7 +17,6 @@
 		A880589A2275707A00929FE4 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88058992275707A00929FE4 /* DownloadsViewController.swift */; };
 		A880589C2275709800929FE4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880589B2275709800929FE4 /* MainTabBarController.swift */; };
 		A880589E227570F900929FE4 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880589D227570F900929FE4 /* ContactsViewController.swift */; };
-		A88058A02275713100929FE4 /* DummyDownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A880589F2275713100929FE4 /* DummyDownloadsViewController.swift */; };
 		A88058A22275715500929FE4 /* DummyContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88058A12275715500929FE4 /* DummyContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		A88058992275707A00929FE4 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		A880589B2275709800929FE4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		A880589D227570F900929FE4 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
-		A880589F2275713100929FE4 /* DummyDownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyDownloadsViewController.swift; sourceTree = "<group>"; };
 		A88058A12275715500929FE4 /* DummyContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +140,6 @@
 				A88058972275706D00929FE4 /* RecentsViewController.swift */,
 				A88058992275707A00929FE4 /* DownloadsViewController.swift */,
 				A880589D227570F900929FE4 /* ContactsViewController.swift */,
-				A880589F2275713100929FE4 /* DummyDownloadsViewController.swift */,
 				A88058A12275715500929FE4 /* DummyContactsViewController.swift */,
 			);
 			path = controllers;
@@ -279,7 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A88058A02275713100929FE4 /* DummyDownloadsViewController.swift in Sources */,
 				A88058982275706D00929FE4 /* RecentsViewController.swift in Sources */,
 				A88058A22275715500929FE4 /* DummyContactsViewController.swift in Sources */,
 				A880589C2275709800929FE4 /* MainTabBarController.swift in Sources */,

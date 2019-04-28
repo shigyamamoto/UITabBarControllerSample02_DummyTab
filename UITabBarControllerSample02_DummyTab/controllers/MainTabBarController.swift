@@ -20,7 +20,7 @@ class MainTabBarController: UITabBarController {
 
 extension MainTabBarController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
-        if viewController is DummyDownloadsViewController {
+        if viewController is DownloadsViewController {
             // モーダル表示
             let storyboard: UIStoryboard = self.storyboard!
             let downloadsView = storyboard.instantiateViewController(withIdentifier: "downloads") as! DownloadsViewController

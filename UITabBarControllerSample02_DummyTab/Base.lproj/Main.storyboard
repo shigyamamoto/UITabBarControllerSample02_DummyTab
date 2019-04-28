@@ -10,34 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Dummy Downloads View Controller-->
-        <scene sceneID="Uma-E4-Hzb">
-            <objects>
-                <viewController id="HC6-PM-Rte" customClass="DummyDownloadsViewController" customModule="UITabBarControllerSample02_DummyTab" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MYf-at-hNI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DummyDownloadsViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xde-U3-dUt">
-                                <rect key="frame" x="79.5" y="437.5" width="255.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Xde-U3-dUt" firstAttribute="centerX" secondItem="MYf-at-hNI" secondAttribute="centerX" id="ASG-tW-7EO"/>
-                            <constraint firstItem="Xde-U3-dUt" firstAttribute="centerY" secondItem="MYf-at-hNI" secondAttribute="centerY" id="ScB-wN-VLE"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="WJt-Qx-gYR"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="downloads" id="IcS-uK-Upn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aj6-9X-Urq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-136" y="-303"/>
-        </scene>
         <!--Downloads View Controller-->
         <scene sceneID="0JF-No-GAY">
             <objects>
@@ -69,13 +41,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3mN-Dh-x1N"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="Ohd-Uy-Yt2"/>
                     <connections>
                         <outlet property="closeBtn" destination="a4r-k9-t54" id="E3S-ko-Ihe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vo0-vg-HVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="-308"/>
+            <point key="canvasLocation" x="-136" y="-303"/>
         </scene>
         <!--Dummy Contacts View Controller-->
         <scene sceneID="6Ru-tV-bpD">
@@ -144,8 +117,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="Ky1-f7-Oyo" kind="relationship" relationship="viewControllers" id="KTn-eC-2MP"/>
-                        <segue destination="HC6-PM-Rte" kind="relationship" relationship="viewControllers" id="QGu-ff-2l8"/>
-                        <segue destination="L6k-Rw-Unv" kind="relationship" relationship="viewControllers" id="0zY-dZ-fzB"/>
+                        <segue destination="bLX-6G-FfS" kind="relationship" relationship="viewControllers" id="0Cb-Q2-acg"/>
+                        <segue destination="L6k-Rw-Unv" kind="relationship" relationship="viewControllers" id="vux-eU-wjc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nk7-aq-WhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
